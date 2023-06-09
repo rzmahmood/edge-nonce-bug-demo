@@ -3,12 +3,16 @@ export your own Sepolia RPC url, zkevm RPC url and private key based on the hard
 
 This passes:
 
-`npx hardhat run scripts/deploy.ts --network sepolia`
+```
+npx hardhat run scripts/deploy.ts --network sepolia
+```
 
 
-This gangs at `const lock2 = await Lock.deploy(unlockTime, { value: lockedAmount });` 4/5 times. 1/5 times it logs `ProviderError: already known`:
+This hangs at `const lock2 = await Lock.deploy(unlockTime, { value: lockedAmount });` 4/5 times. 1/5 times it logs `ProviderError: already known`:
 
-`npx hardhat run scripts/deploy.ts --network zkevm`
+```
+npx hardhat run scripts/deploy.ts --network zkevm
+```
 
 # Sample Hardhat Project
 
